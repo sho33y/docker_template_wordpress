@@ -33,7 +33,7 @@ services:
       TZ: Asia/Tokyo
     restart: always
 
-  mail:
+  mailhog:
     image: mailhog/mailhog
     ports:
       - ${MAILHOG_PORT_HTTP}:8025
