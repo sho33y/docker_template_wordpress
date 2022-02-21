@@ -10,7 +10,7 @@ RUN apk --no-cache add \
 RUN pecl install xdebug \
     && docker-php-ext-enable xdebug
 
-# wp-cliのインストール
+# wp-cliインストール
 RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar \
     && chmod +x wp-cli.phar \
     && mv wp-cli.phar /usr/local/bin/wp \
